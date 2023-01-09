@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="171dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/cppk"
+        android:contentDescription="@string/logo_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/purple_500"
+        android:text="@string/title_text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="413dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="240dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129">
+
+        <Button
+            android:id="@+id/akb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2sp"
+            android:layout_marginEnd="3sp"
+            android:layout_weight="1"
+            android:onClick="goAkbActivity"
+            android:text="@string/akb"
+            app:cornerRadius="10dp"
+            app:strokeColor="#070707"
+            app:strokeWidth="2dp" />
+
+        <Button
+            android:id="@+id/vspom_сompr"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp"
+            android:layout_marginStart="3sp"
+            android:layout_marginEnd="3sp"
+            android:layout_weight="1"
+            android:onClick="goVspomComprActivity"
+            android:text="@string/vspom_сompr"
+            app:cornerRadius="10dp"
+            app:strokeColor="#070707"
+            app:strokeWidth="2dp" />
+
+        <Button
+            android:id="@+id/drive"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp"
+            android:layout_marginStart="3sp"
+            android:layout_marginEnd="3sp"
+            android:layout_weight="1"
+            android:onClick="goDriveActivity"
+            android:text="@string/drive"
+            app:cornerRadius="10dp"
+            app:strokeColor="#070707"
+            app:strokeWidth="2dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="413dp"
+        android:layout_height="78dp"
+        android:layout_below="@id/linearLayout1"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0sp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129">
+
+        <Button
+            android:id="@+id/bv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2sp"
+            android:layout_marginEnd="2sp"
+            android:layout_weight="1"
+            android:onClick="goBvActivity"
+            android:text="@string/bv"
+            app:cornerRadius="10dp"
+            app:strokeColor="#070707"
+            app:strokeWidth="2dp" />
+
+        <Button
+            android:id="@+id/protect"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp"
+            android:layout_marginStart="2sp"
+            android:layout_marginEnd="2sp"
+            android:layout_weight="1"
+            android:onClick="goProtectActivity"
+            android:text="@string/protect"
+            app:cornerRadius="10dp"
+            app:strokeColor="#070707"
+            app:strokeWidth="2dp" />
+
+        <Button
+            android:id="@+id/device"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp"
+            android:layout_marginStart="2sp"
+            android:layout_marginEnd="2sp"
+            android:layout_weight="1"
+            android:onClick="goDeviceActivity"
+            android:text="@string/safety_device"
+            app:cornerRadius="10dp"
+            app:strokeColor="#070707"
+            app:strokeWidth="2dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="413dp"
+        android:layout_height="78dp"
+        android:layout_below="@id/linearLayout2"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129">
+
+        <Button
+            android:id="@+id/loop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2sp"
+            android:layout_marginEnd="3sp"
+            android:layout_weight="1"
+            android:onClick="goLoopActivity"
+            android:text="@string/loop"
+            app:cornerRadius="10dp"
+            app:strokeColor="#070707"
+            app:strokeWidth="2dp" />
+
+        <Button
+            android:id="@+id/pantograph"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp"
+            android:layout_marginStart="3sp"
+            android:layout_marginEnd="3sp"
+            android:layout_weight="1"
+            android:onClick="goPantographActivity"
+            android:text="@string/pantograph"
+            app:cornerRadius="10dp"
+            app:strokeColor="#070707"
+            app:strokeWidth="2dp" />
+
+        <Button
+            android:id="@+id/gl_compr"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp"
+            android:layout_marginStart="3sp"
+            android:layout_marginEnd="3sp"
+            android:layout_weight="1"
+            android:onClick="goGlComprActivity"
+            android:text="@string/gl_сompr"
+            app:cornerRadius="10dp"
+            app:strokeColor="#070707"
+            app:strokeWidth="2dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="413dp"
+        android:layout_height="78dp"
+        android:layout_below="@id/linearLayout3"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129">
+
+        <Button
+            android:id="@+id/ast"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2sp"
+            android:layout_marginEnd="3sp"
+            android:layout_weight="1"
+            android:onClick="goAstActivity"
+            android:text="@string/ast"
+            app:cornerRadius="10dp"
+            app:strokeColor="#070707"
+            app:strokeWidth="2dp" />
+
+        <Button
+            android:id="@+id/sot"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp"
+            android:layout_marginStart="3sp"
+            android:layout_marginEnd="3sp"
+            android:layout_weight="1"
+            android:onClick="goSotActivity"
+            android:text="@string/sot"
+            app:cornerRadius="10dp"
+            app:strokeColor="#070707"
+            app:strokeWidth="2dp" />
+
+        <Button
+            android:id="@+id/supply_u"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp"
+            android:layout_marginStart="3sp"
+            android:layout_marginEnd="3sp"
+            android:layout_weight="1"
+            android:onClick="VoltageAkbActivity"
+            android:text="@string/supply_voltage"
+            app:cornerRadius="10dp"
+            app:strokeColor="#070707"
+            app:strokeWidth="2dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="600dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/dop_info" />
+
+
+</RelativeLayout>

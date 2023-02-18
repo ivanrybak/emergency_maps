@@ -7,4 +7,12 @@
     android:background="@color/bg"
     tools:context=".DriveActivity2"
     tools:ignore="ExtraText">
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/driveView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
 </RelativeLayout>

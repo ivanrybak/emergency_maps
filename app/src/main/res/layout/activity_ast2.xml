@@ -4,7 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg"
+
     tools:context=".AstActivity2"
     tools:ignore="ExtraText">
+
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/astView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
 </RelativeLayout>

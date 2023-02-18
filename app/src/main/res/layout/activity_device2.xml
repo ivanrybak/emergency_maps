@@ -7,4 +7,12 @@
     android:background="@color/bg"
     tools:context=".DeviceActivity2"
     tools:ignore="ExtraText">
+
+
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/deviceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 </RelativeLayout>
